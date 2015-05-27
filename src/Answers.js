@@ -1,5 +1,10 @@
-selectElementsStartingWithA = function() {
+selectElementsStartingWithA = function(array) {
+  function filterByFirstLetter(element){
+   if (element.toLowerCase().indexOf('a') === 0)
+    {return element;}
+  }
 
+  return array.filter(filterByFirstLetter);
 };
 
 selectElemetsStartingWithVowel = function() {
@@ -99,5 +104,9 @@ getDomainNameFromEmailAddress = function() {
 };
 
 titleizeAString = function() {
+
+};
+
+checkAStringForSpecialCharacters = function() {
 
 };

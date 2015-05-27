@@ -143,39 +143,8 @@ describe('Javascript refresher', function() {
   it('checkAStringForSpecialCharacters', function() {
     n = 'ABCdef123';
     m = 'ABC@def123';
-    expect(checkAStringForSpecialCharacters(nn)).toBe(false);
+    expect(checkAStringForSpecialCharacters(n)).toBe(false);
     expect(checkAStringForSpecialCharacters(m)).toBe(true);
   });
 
-  it('', function() {
-
-  });
-
-  it('', function() {
-
-  });
-
-  it('', function() {
-
-  });
-
-  it('', function() {
-
-  });
-
-  it('', function() {
-
-  });
-
-  it('', function() {
-
-  });
-
-  it('', function() {
-
-  });
-
-  it('', function() {
-
-  });
 });
