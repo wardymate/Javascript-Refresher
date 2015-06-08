@@ -1,9 +1,8 @@
 selectElementsStartingWithA = function(array) {
-  function filterByFirstLetter(element){
+  filterByFirstLetter = function (element){
    if (element.toLowerCase().indexOf('a') === 0)
     {return element;}
-  }
-
+  };
   return array.filter(filterByFirstLetter);
 };
 
@@ -11,7 +10,7 @@ selectElemetsStartingWithVowel = function() {
 
 };
 
-removeNilsFromArray = function() {
+removeNilsFromArray = function(array) {
 
 };
 
@@ -19,8 +18,13 @@ removeNilsAndFalseFromArray = function() {
 
 };
 
-reverseEveryElementInArray = function () {
 
+
+reverseEveryElementInArray = function (array) {
+  for (var i = 0; i < array.length; i++) {
+    var items = array[i].split('').reverse();
+    console.log(items)   ;
+  }
 };
 
 everyPossiblePairingOfStudents = function() {
@@ -43,8 +47,12 @@ getFirstHalfOfString = function() {
 
 };
 
-makeNumbersNegative = function() {
-
+makeNumbersNegative = function(number) {
+  if (number > 0) {
+    return number*-1;
+  } else {
+    return number;
+  }
 };
 
 separateArrayIntoEvenAndOddNumbers = function() {
