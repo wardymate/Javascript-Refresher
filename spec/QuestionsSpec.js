@@ -81,7 +81,7 @@ describe('Javascript refresher', function() {
     expect(longestWordInArray(n)).toEqual('different');
   });
 
-  xit('totalOfArray', function() {
+  it('totalOfArray', function() {
     n = [1, 3, 5, 6, 2, 8];
     expect(totalOfArray(n)).toEqual(25);
   });
