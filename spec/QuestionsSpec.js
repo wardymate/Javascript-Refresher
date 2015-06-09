@@ -86,7 +86,7 @@ describe('Javascript refresher', function() {
     expect(totalOfArray(n)).toEqual(25);
   });
 
-  xit('doubleArray', function() {
+  it('doubleArray', function() {
     n = [1, 2, 3];
     expect(doubleArray(n)).toEqual([1, 2, 3, 1, 2, 3]);
   });

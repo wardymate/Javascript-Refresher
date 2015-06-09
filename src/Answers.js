@@ -77,8 +77,16 @@ totalOfArray = function(array) {
   });
 };
 
-doubleArray = function() {
-
+doubleArray = function(array) {
+  var output = [];
+  var j = 0;
+  while (j<2) {
+    for (var i = 0; i < array.length; i++) {
+      output.push(array[i]);
+    }
+    j++;
+  }
+  return output;
 };
 
 averageOfArray = function() {
