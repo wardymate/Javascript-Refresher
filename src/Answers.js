@@ -89,8 +89,10 @@ doubleArray = function(array) {
   return output;
 };
 
-averageOfArray = function() {
-
+averageOfArray = function(array) {
+  var total = totalOfArray(array);
+  answer = total/(array.length);
+  return Math.ceil(answer);
 };
 
 getElementsUntilGreaterThanFive = function() {

@@ -91,7 +91,7 @@ describe('Javascript refresher', function() {
     expect(doubleArray(n)).toEqual([1, 2, 3, 1, 2, 3]);
   });
 
-  xit('averageOfArray', function() {
+  it('averageOfArray', function() {
     n = [10, 15, 25];
     expect(averageOfArray(n)).toEqual(17);
   });
