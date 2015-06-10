@@ -10,8 +10,9 @@ selectElemetsStartingWithVowel = function() {
 
 };
 
-removeNilsFromArray = function(array) {
-
+removeNullsFromArray = function(array) {
+  console.log(0.1 + 0.2);
+  console.log(0.1 + 0.2 == 0.3);
 };
 
 removeNilsAndFalseFromArray = function() {
@@ -59,8 +60,12 @@ separateArrayIntoEvenAndOddNumbers = function() {
 
 };
 
-numberofElementsThatArePalindromes = function() {
-
+numberofElementsThatArePalindromes = function(array) {
+  isPalindrome = function(string) {
+    return (string == string.split('').reverse().join(''));
+  };
+  result = array.filter(isPalindrome);
+  return result.length;
 };
 
 shortestWordInarray = function() {
@@ -111,12 +116,12 @@ removeCapitalLettersFromString = function() {
 
 };
 
-roundUpNumber = function() {
-
+roundUpNumber = function(number) {
+  return Math.ceil(number);
 };
 
-roundDownNumber = function() {
-
+roundDownNumber = function(number) {
+  return Math.floor(number);
 };
 
 getDomainNameFromEmailAddress = function() {

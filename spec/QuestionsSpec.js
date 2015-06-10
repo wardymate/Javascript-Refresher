@@ -12,9 +12,9 @@ describe('Javascript refresher', function() {
     expect(selectElemetsStartingWithVowel(n)).toEqual(['omar', 'idris', 'angela']);
   });
 
-  xit('removeNilsFromArray', function() {
-    n = ['a', 'b', nil, nil, false, 'c', nil];
-    expect(removeNilsFromArray(n)).toEqual(['a', 'b', false, 'c']);
+  xit('removeNullsFromArray', function() {
+    n = ['a', 'b', null, null, false, 'c', null];
+    expect(removeNullsFromArray(n)).toEqual(['a', 'b', false, 'c']);
   });
 
   xit('removeNilsAndFalseFromArray', function() {
@@ -66,7 +66,7 @@ describe('Javascript refresher', function() {
     expect(separateArrayIntoEvenAndOddNumbers(n)).toEqual([[2, 4, 6], [1, 3, 5, 7]]);
   });
 
-  xit('numberofElementsThatArePalindromes', function() {
+  it('numberofElementsThatArePalindromes', function() {
     n = ['bob', 'radar', 'alex', 'noon', 'banana'];
     expect(numberofElementsThatArePalindromes(n)).toEqual(3);
   });
@@ -116,12 +116,12 @@ describe('Javascript refresher', function() {
     expect(removeCapitalLettersFromString(n)).toEqual('ello ohnoe');
   });
 
-  xit('roundUpNumber', function() {
+  it('roundUpNumber', function() {
     n = 3.142;
     expect(roundUpNumber(n)).toEqual(4);
   });
 
-  xit('roundDownNumber', function() {
+  it('roundDownNumber', function() {
     n = 4.9;
     expect(roundDownNumber(n)).toEqual(4);
   });
